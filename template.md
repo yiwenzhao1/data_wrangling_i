@@ -179,3 +179,19 @@ fellow_df = read_excel("data/LotR_Words.xlsx", range = "B3:D6")
 ``` r
 pulse_df = read_sas("data/public_pulse_data.sas7bdat")
 ```
+
+## why to never use ‘read.csv’
+
+‘read.csv’ doesn’t give ‘tibble’ and that’s really bad
+
+``` r
+littes_df_base = read.csv("data/FAS_litters.csv")
+```
+
+## how do I export data
+
+there’s a nice way
+
+``` r
+write_csv(fellow_df, "data/fellowshio_words.csv")
+```
