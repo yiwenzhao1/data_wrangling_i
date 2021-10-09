@@ -159,3 +159,23 @@ litters_data = read_csv(file = "./data/FAS_litters.csv",
   col_types = cols('GD of Birth' = col_integer())
 )
 ```
+
+## Reading ftom Excel
+
+Reading MLB data
+
+``` r
+mlb11_df = read_excel("data/mlb11.xlsx")
+```
+
+LotR Words is next.
+
+``` r
+fellow_df = read_excel("data/LotR_Words.xlsx", range = "B3:D6")
+```
+
+## Read a SAS file
+
+``` r
+pulse_df = read_sas("data/public_pulse_data.sas7bdat")
+```
